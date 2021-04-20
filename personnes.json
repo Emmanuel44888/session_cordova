@@ -1,0 +1,14 @@
+{
+  "personnes": [
+    {
+      "id": 1,
+      "nom": "wick",
+      "prenom": "john"
+    },
+    {
+      "id": 2,
+      "nom": "green",
+      "prenom": "bob"
+    }
+  ]
+}
