@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+
+  <title>Information</title>
+</head>
+
+<body>
+
+
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Logo</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="information.html">Information</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="center-align">
+    <h1>SPACENEWS</h1>
+    <h4 class="center">Informations concernant le device</h4>
+    <br><br><br>
+    <a class="btn waves-effect primary darken-text-2" href="home.html">Accueil</a>
+  </div>
+
+  <ul class="sidenav" id="mobile-demo">
+    <h4 style="text-align: center;">Space News</h4>
+    <li><a href="home.html">HOME</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="information.html">Information</a></li>
+    <li><a href="blog.html">Blog</a></li>
+  </ul>
+
+  <div>
+    <p id="deviceInfoText"></p>
+  </div>
+
+  <script src="./js/jquery-3.6.0.js"></script>
+  <script src="cordova.js"></script>
+  <script src="js/index.js"></script>
+  <script src="./js/materialize.js"></script>
+
+  <!-- <script type="text/javascript" src="cordova.js"></script> -->
+  <script type="text/javascript">
+    document.addEventListener("deviceready", function () {
+      var deviceinfo = "cordova:" + device.cordova + "<br>Model:" + device.model + "<br>UUID:" + device.uuid + "<br>Platform:" + device.platform + "(" + device.version + ")";
+      document.getElementById("deviceInfoText").innerHTML = deviceinfo;
+    }, false);
+  </script>
+
+
+
+</body>
+
+</html>

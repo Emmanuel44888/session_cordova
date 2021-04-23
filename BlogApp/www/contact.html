@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+
+    <title>Contact</title>
+</head>
+<body>
+  
+  
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Logo</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="information.html">Information</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </div>
+  </nav>
+  
+  <ul class="sidenav" id="mobile-demo">
+    <h4 style="text-align: center;">Space News</h4>
+    <li><a href="home.html">HOME</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="information.html">Information</a></li>
+    <li><a href="blog.html">Blog</a></li>
+  </ul>
+
+
+  <!-- Section contact -->
+
+  <div>
+    <span>
+      <h4 style="text-align: center;">Space News</h4>
+    </span>
+  </div>
+  <div>
+    <span>
+      <h4 style="text-align: center;">Formulaire contact</h4>
+    </span>
+  </div>
+
+  <body class = "container">   
+    <div class = "row">
+       <form class = "col s12">
+          <div class = "row">
+             <div class = "input-field col s6">
+                <i class = "material-icons prefix">account_circle</i>
+                <input placeholder = "Username" value = "Mahesh" id = "name"
+                   type = "text" class = "active validate" required />
+                <label for = "name">Username</label>
+             </div>
+             
+             <div class = "input-field col s6">      
+                <label for = "first-name">Prenom</label>
+                <input id = "first-name" type = "password" placeholder = "Prénom"
+                   class = "name" required />          
+             </div>
+          </div>
+          
+          <div class = "row">
+             <div class = "input-field col s12">
+                <input placeholder = "Email" id = "email" type = "email"
+                   class = "validate">
+                <label for = "email">Email</label>
+             </div>
+          </div>
+          
+          <div class = "row">
+             <div class = "input-field col s12">
+                <i class = "material-icons prefix">mode_edit</i>
+                <textarea id = "address" class = "materialize-textarea"></textarea>
+                <label for = "address">Address</label>
+             </div>
+          </div>
+          
+          <div class = "row">
+             <div class = "input-field col s12">
+                <input placeholder = "Comments (Disabled)" id = "comments"
+                   type = "text" disabled />
+                <label for = "comments">Comments</label>
+             </div>
+          </div>
+          
+          <div>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Submit<i class="material-icons right">send</i>
+              
+            </button>
+          </div>
+
+          <div class = "row">
+             <div class = "input-field col s12">
+                <p>
+                   <input id = "married" type = "checkbox" checked = "checked" />
+                   <label for = "married">Married</label>
+                </p>
+                
+                <p>
+                   <input id = "single" type = "checkbox" class = "filled-in" />
+                   <label for = "single">Single</label>
+                </p>
+                
+                <p>
+                   <input id = "dontknow" type = "checkbox" disabled = "disabled" />              
+                   <label for = "dontknow">Don't know (Disabled)</label>
+                </p>
+             </div>
+          </div>
+          
+          <div class = "row">
+             <div class = "input-field col s12">
+                 <p>
+                   <input id = "male" type = "radio" name = "gender"
+                      value = "male" checked />
+                   <label for = "male">Male</label>
+                </p>
+                
+                <p>
+                   <input id = "female" type = "radio" name = "gender"
+                      value = "female" checked />
+                   <label for = "female">Female</label>
+                </p>
+                
+                <p>
+                   <input id = "dontknow1" type = "radio" name = "gender"
+                      value = "female" disabled />
+                   <label for = "dontknow1">Don't know (Disabled)</label>
+                </p>
+             </div>
+          </div>           
+       </form>       
+    </div>  
+<!-- <div id class="submit" >
+  <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+    
+
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo">Logo</a>
+        <ul class="left hide-on-med-and-down">
+          <li><a class="waves-effect waves-light btn">Button</a></li>
+          <li><a class="waves-effect waves-light btn">Button <i class="material-icons right">cloud</i></a></li>
+          <li><a class="waves-effect waves-light btn-large">Large Button</a></li>
+        </ul>
+      </div>
+    </nav>
+  </button>
+  <div>
+    <br>
+  </div>
+</div> -->
+
+        <script src="./js/jquery-3.6.0.js"></script>
+        <script src="cordova.js"></script>
+        <script src="js/index.js"></script>
+        <script src="./js/materialize.js"></script>
+
+</body>
+</html>

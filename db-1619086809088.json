@@ -1,0 +1,24 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "libelle": "Article1: Voiture",
+      "description1": "Description1: Petite description",
+      "description2": "Description2: Longue description avec des details",
+      "urlPhotoPr": "img/img1.jpg",
+      "urlPhotoDetail1": "img/img2.jpg",
+      "urlPhotoDetail2": "img/img3.jpg",
+      "urlPhotoDetail3": "img/img4.jpg"
+    },
+    {
+      "id": 2,
+      "libelle": "Article2: Voiture",
+      "description1": "Description1: Petite description",
+      "description2": "Description2: Longue description avec des details",
+      "urlPhotoPr": "img/img5.jpg",
+      "urlPhotoDetail1": "img/img6.jpg",
+      "urlPhotoDetail2": "img/img7.jpg",
+      "urlPhotoDetail3": "img/img8.jpg"
+    }
+  ]
+}

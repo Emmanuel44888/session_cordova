@@ -9,6 +9,16 @@
       "id": 2,
       "nom": "green",
       "prenom": "bob"
+    },
+    {
+      "id": 3,
+      "nom": "New Person4",
+      "prenom": "New Person4"
+    },
+    {
+      "id": 4,
+      "nom": "New Person2",
+      "prenom": "New Person2"
     }
   ]
 }

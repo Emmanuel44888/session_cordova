@@ -1,0 +1,18 @@
+{
+    "android": {
+        "debug": {
+            "keystore": "./myfirstcordovaapp.keystore",
+            "storePassword": "Natacha1",
+            "alias": "myfirstcordovaapp",
+            "password" : "Natacha1",
+            "keystoreType": "jks"
+        },
+        "release": {
+            "keystore": "./myfirstcordovaapp.keystore",
+            "storePassword": "Natacha1",
+            "alias": "myfirstcordovaapp",
+            "password" : "Natacha1",
+            "keystoreType": "jks"
+        }
+    }
+}
