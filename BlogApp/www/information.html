@@ -16,39 +16,47 @@
 
 <body>
 
+  
+    <nav class="blue darken-4">
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="information.html">Information</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+    </nav>
 
-  <nav>
-    <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Logo</a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="home.html">HOME</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="information.html">Information</a></li>
-        <li><a href="blog.html">Blog</a></li>
-      </ul>
+    <ul class="sidenav" id="mobile-demo">
+      <h4 style="text-align: center;">Space News</h4>
+      <li><a href="home.html">HOME</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="information.html">Information</a></li>
+      <li><a href="blog.html">Blog</a></li>
+    </ul>
+
+
+    <div class="center-align">
+      <h1>SPACENEWS</h1>
+      <h6 class="center">Informations concernant le device</h6>
+      <br><br><br>
+      <a class="btn waves-effect primary blue darken-4" href="home.html">Accueil</a>
     </div>
-  </nav>
 
-  <div class="center-align">
-    <h1>SPACENEWS</h1>
-    <h4 class="center">Informations concernant le device</h4>
-    <br><br><br>
-    <a class="btn waves-effect primary darken-text-2" href="home.html">Accueil</a>
+    <div class="container">   
+      
+            
+            
+    <div>
+      <p id="deviceInfoText"></p>
+    </div>
   </div>
 
-  <ul class="sidenav" id="mobile-demo">
-    <h4 style="text-align: center;">Space News</h4>
-    <li><a href="home.html">HOME</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="information.html">Information</a></li>
-    <li><a href="blog.html">Blog</a></li>
-  </ul>
 
-  <div>
-    <p id="deviceInfoText"></p>
-  </div>
-
+  
   <script src="./js/jquery-3.6.0.js"></script>
   <script src="cordova.js"></script>
   <script src="js/index.js"></script>
