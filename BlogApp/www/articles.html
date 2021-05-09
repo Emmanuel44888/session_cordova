@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <title>Article</title>
+</head>
+
+<body>
+  <nav class="blue darken-4">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo"></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="information.html">Information</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="articles.html">Articles</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <h4 style="text-align: center;">Space News</h4>
+    <li><a href="home.html">HOME</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="information.html">Information</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="articles.html">Articles</a></li>
+  </ul>
+
+
+  <div class="center-align">
+    <h4>SPACENEWS</h4>
+    <!-- <div class="container app"> -->
+    <h1>Article</h1>
+
+
+    <div class="container">
+        <table id="userTable" border="1" >
+           <thead>
+             <tr>
+               <th width="5%">Id</th>
+               <th width="20%">Libelle</th>
+               <th width="20%">Description1</th>
+               <th width="30%">Description2</th>
+             </tr>
+           </thead>
+           <tbody></tbody>
+        </table>
+     </div>
+
+     <!-- EB - Example Materialize -->
+     <div class="container">
+      <div class="row">
+      <div class="col s12"><h3>MATERIALIZECSS EXAMPLE</h3><h4>A simple website just to show
+     how an element is used.</h4></div>
+      <div class="col s12 m6 l3">
+      <img class="materialboxed" width="100%" height="220"
+     src="https://upload.wikimedia.org/wikipedia/commons/7/76/Katun_nature_reserve.jpg">
+      <h4>Katun Nature Reserve</h4>
+      <p><i>Lovely Place</i></p>
+      </div>
+      <div class="col s12 m6 l3">
+      <img class="materialboxed" width="100%" height="220"
+     src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Computer_art_4.png">
+      <h4>Art</h4>
+      <p><i>Simple & Attractive</i></p>
+      </div>
+      <div class="col s12 m6 l3">
+      <img class="materialboxed" width="100%" height="220"
+     src="https://c1.staticflickr.com/9/8715/16947318656_4c6cbc3091_b.jpg">
+      <h4>Food</h4>
+      <p><i>For any occasion</i></p>
+      </div>
+      <div class="col s12 m6 l3">
+      <img class="materialboxed" width="100%" height="220"
+     src="https://c1.staticflickr.com/7/6179/6217102314_350be5e843.jpg">
+      <h4>Steve Jobs</h4>
+      <p><i>Inspiration</i></p>
+      </div>
+      <div class="col s12"><h5>Comment your suggestion</h5></div>
+      </div>
+      </div>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript"
+     src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+<!-- EB - Examples -Carte de base -->
+
+<div class="container">
+  <div class="row">
+  <div class="col s5">
+  <div class="card">
+  <div class="card-image">
+  <img id="img1" src="image.png">
+  <a href="#" class="btn-floating halfway-fab blue darken-4 btn-large"><i
+ class="material-icons">add</i></a>
+  </div>
+  <div class="card-content">
+  <h3>This is a card</h3>
+  <p class="flow-text">Cards are really cool for conveying information in a
+ beautiful way.</p>
+ <div class="card-action"><a href="#" class="btn blue darken-4">Read More</a></div>
+
+  </div>
+  </div>
+  </div>
+  </div>
+ </div>
+
+ <!-- EB-  Bouton d'ation flottant (FAB) -->
+ <div class="container">
+  <div class="row">
+  <div class="col s5">
+  <div class="card">
+  <div class="card-image">
+  <img id="img2" src="image.png">
+  <a href="#" class="btn-floating halfway-fab blue darken-4 btn-large"><i
+ class="material-icons">add</i></a>
+  </div>
+  <div class="card-content">
+  <h3>This is a card</h3>
+  <p id="articleList" class="flow-text">Cards are really cool for conveying information in a
+ beautiful way.</p>
+  </div>
+  </div>
+  </div>
+  </div>
+ </div>
+
+    <!-- EB-  -->
+<nav>
+        <div class="nav-wrapper">
+            <a href="#!" class="brand-logo">Logo</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="crud.html">FAKE CRUD JS</a></li>
+                <li><a href="crud2.html">CRUD JQUERY</a></li>
+            </ul>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="crud.html">FAKE CRUD JS</a></li>
+        <li><a href="crud2.html">CRUD JQUERY</a></li>
+    </ul>
+    <div class="container">
+        <div id="articleSearchPanel">
+            <h4>CRUD</h4>
+            <button id="findButton">Afficher</button>
+            <button id="newButton">Ajouter</button>
+            <br>
+            <div id="articleListPanel">
+                <ul id="articleList"></ul>
+            </div>
+        </div>
+        <div id="articleDetailsPanel">
+            <h5>Edit</h5>
+            <!-- <input type="hidden" id="id"><br> -->
+            <!-- <input type="text" id="libelle"><br> -->
+            <input type="text" id="description1"><br>
+            <input type="text" id="description2"><br>
+            <input type="image" id="urlPhotoPr"><br>
+            <input type="image" id="urlPhotoDetail1"><br>
+            <input type="image" id="urlPhotoDetail2"><br>
+            <input type="image" id="urlPhotoDetail3"><br>
+            <div>
+                <button id="backtoSearchButton">Retour</button>
+                <button id="saveButton">Enregistrer</button>
+                <button id="deleteButton">Supprimer</button>
+            </div>
+        </div>
+    </div>
+
+
+ <script src="js/articles.js"></script>
+  <script src="./js/jquery-3.6.0.js"></script>
+  <script src="cordova.js"></script>
+  <script src="js/index.js"></script>
+  <script src="./js/materialize.js"></script>
+
+  <script>
+
+
+
+
+// $(document).ready(function(){
+//     $.ajax({
+//         url: 'http://localhost:5557/articles/',
+//         // url: 'http://10.0.2.2:5557/articles/',
+//         // url: 'http://10.0.2.2:5556/articles/',
+//         type: 'get',
+//         dataType: 'JSON',
+//         success: function(response){
+//             var len = response.length;
+//             for(var i=0; i<len; i++){
+//                 var id = response[i].id;
+//                 var libelle = response[i].libelle;
+//                 var description1 = response[i].description1;
+//                 var description2 = response[i].description2;
+
+//                 var tr_str = "<tr>" +
+//                     "<td align='center'>" + (i+1) + "</td>" +
+//                     "<td align='center'>" + libelle + "</td>" +
+//                     "<td align='center'>" + description1 + "</td>" +
+//                     "<td align='center'>" + description2 + "</td>" +
+//                     "</tr>";
+
+//                 $("#userTable tbody").append(tr_str);
+//             }
+
+//         }
+//     });
+// });
+
+  </script>
+
+
+</body>
+
+</html>

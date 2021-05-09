@@ -23,6 +23,7 @@
           <li><a href="contact.html" class="blue darken-4">Contact</a></li>
           <li><a href="information.html" class="blue darken-4">Information</a></li>
           <li><a href="blog.html" class="blue darken-4">Blog</a></li>
+          <li><a href="articles.html">Articles</a></li>
         </ul>
       </div>
     </nav>
@@ -54,6 +55,7 @@
       <li><a href="contact.html" class="blue darken-1">Contact</a></li>
       <li><a href="information.html" class="blue darken-1">Information</a></li>
       <li><a href="blog.html" class="blue darken-1">Blog</a></li>
+      <li><a href="articles.html">Articles</a></li>
     </ul>
 
      <div class="container">
@@ -140,7 +142,7 @@
         <div class="card">
           <div class="card-image">
             <img src="./img/img4.jpg">
-            <span class="card-title">" L’ombre d’Ingenuity durant son premier vol "</span>
+            <span class="card-title" id="article4">" L’ombre d’Ingenuity durant son premier vol "</span>
           </div>
           <div class="card-content">
             <p>19/04 : </p>
@@ -169,154 +171,6 @@
     <script src="cordova.js"></script>
     <script src="js/index.js"></script>
     <script src="./js/materialize.js"></script>
-
-    <script>
-
-      var articlesManager = {
-
-        showPersonList: function () {
-          $.ajax({
-            url: "https://10.0.0.2:55557/articles/",
-            type: "GET",
-            cache: false,
-            dataType: 'json',
-            success: function (data) {
-              // console.log(data);
-              // $('#personList li').remove();
-              $.each(data, function (index, article) {
-                $('<li>')
-                  // .text(personne.nom + ' / ' + personne.prenom)
-                  // .attr('value', personne.id).appendTo($('#personList'))
-                  .append("<button onclick=\"personManager.showPersonDetails(\'" + personne.id + "\');\" >Edit</button>")
-                  .append("<button onclick=\"personManager.showPersonDetails(\'" + personne.id + "\');\" >Edit</button>")
-                  ;
-
-              });
-              $('#personListPanel').show();
-            }
-          });
-        },
-        showPersonDetails: function (id) {
-          if (id == null) return;
-          $('#personSearchPanel').hide();
-          $.ajax({
-            url: "https://10.0.0.2:55557/articles/" + id, 
-            type: "GET", 
-            cache: false, 
-            dataType: 'json', 
-            success: function (person) {
-              console.log(person);
-              $('#personDetailsPanel').show();
-              $('#id').attr('value', person.id);
-              $('#nom').attr('value', person.nom).focus();
-              $('#prenom').attr('value', person.prenom);
-            }
-          });
-        },
-
-        backtoSearch: function () {
-          $('#personDetailsPanel').hide();
-          $('#personSearchPanel').show();
-          $('#personList').focus();
-        },
-        collectFieldsValues: function () {
-          return {
-            id: $('#id').val(),
-            nom: $('#nom').val(),
-            prenom: $('#prenom').val(),
-          }
-        },
-
-        refreshSearch: function () {
-          this.backtoSearch();
-          this.showPersonList();
-        },
-
-        newPerson: function () {
-          $('#personSearchPanel').hide();
-          $('#personDetailsPanel').show();
-          $('#id').attr('value', null);
-          $('#nom').attr('value', 'New Person').focus().select();
-          $('#prenom').attr('value', 'New Person');
-
-        },
-
-        savePerson: function () {
-          if (!confirm('Save ?')) return false;
-          var requestType = $('#id').val() != '' ? 'PUT' : 'POST';
-          $.ajax({
-            url: "https://10.0.0.2:55557/articles/" + $('#id').val(), // La ressource ciblée, pour Android utiliser http://10.0.2.2:5556/personnes/
-            type: requestType, // Le type de la requête HTTP,
-            data: personManager.collectFieldsValues(), // On passe nos données à l'url
-            cache: false, // n'enregistre pas temporairement des copies de données
-            dataType: 'json', //  Le type de données à recevoir, ici, du json
-            success: function (result) {
-              if (result.error) {
-                alert(result.error[0].message);
-              } else {
-                if (requestType == 'POST')
-                  alert('ID de la nouvelle entrée : ' + result.id);
-                personManager.refreshSearch();
-              }
-            }
-          });
-        },
-
-        deletePerson: function () {
-          if (!confirm('Delete ?')) return;
-          $.ajax({
-            url: "https://10.0.0.2:55557/articles/" + $('#id').val(), // La ressource ciblée, pour Android utiliser http://10.0.2.2:5556/personnes/
-            type: "delete", // Le type de la requête HTTP,
-            dataType: 'json', //  Le type de données à recevoir, ici, du json
-            success: function (result) {
-              if (result.error)
-                alert(result.error[0].message);
-              else
-                personManager.refreshSearch();
-            }
-          });
-
-        }
-      }
-
-      $(document).ready(function () {
-
-        $('#personListPanel, #personDetailsPanel').hide();
-
-        $('#findButton').click(function (e) {
-          e.preventDefault();
-          personManager.showPersonList();
-        })
-
-        // $('#showDetailsButton').click(function (e) {
-        //     e.preventDefault();
-        //     personManager.showPersonDetails($('#personList').val());
-        // })
-
-        $('#backtoSearchButton').click(function (e) {
-          e.preventDefault();
-          personManager.backtoSearch();
-        })
-
-        $('#newButton').click(function (e) {
-          e.preventDefault();
-          personManager.newPerson();
-        })
-
-        $('#saveButton').click(function (e) {
-          e.preventDefault();
-          personManager.savePerson();
-        })
-
-        $('#deleteButton').click(function (e) {
-          e.preventDefault();
-          personManager.deletePerson();
-        })
-
-
-      })
-
-    </script>
 
 </body>
 
